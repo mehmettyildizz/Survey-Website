@@ -1,0 +1,214 @@
+﻿@model SurveyApp.Models.Survey
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="ocean, ​VR&amp;apos;s Surprising Benefits">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>CreateSurvey</title>
+    <link rel="stylesheet" href="~/nicepage.css" media="screen">
+    <link rel="stylesheet" href="~/CreateSurvey.css" media="screen">
+    <script class="u-script" type="text/javascript" src="~/jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="~/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.2.22, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link id="u-page-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="CreateSurvey">
+    <meta property="og:type" content="website">
+    <style>
+        .border1 {
+            border: 3px solid #A3E4DB;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<script type="text/javascript">
+  
+    function showMessage()
+        {
+            alert("Question is successfully created.Please go to Available Surveys.");
+        }
+  
+    
+</script>
+
+<body class="u-body">
+    <header class="u-clearfix u-gradient u-header u-header" id="sec-eced">
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="LG">
+            <div class="menu-collapse"
+                 style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;"
+                 wfd-invisible="true">
+                <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-color u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                   href="#" style="padding: 7px 12px; font-size: calc(1em + 14px);">
+                    <svg viewBox="0 0 24 24">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+                    </svg>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                                <rect y="1" width="16" height="2"></rect>
+                                <rect y="7" width="16" height="2"></rect>
+                                <rect y="13" width="16" height="2"></rect>
+                            </symbol>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div class="u-custom-menu u-nav-container" wfd-invisible="true">
+                <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+                    <li class="u-nav-item">
+                        <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white"
+                           asp-controller="MainPage" asp-action="Mainpage" style="padding: 24px 6px;">Home</a>
+                    </li>
+                    <li class="u-nav-item">
+                        <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white"
+                          href="/mySurveysPage/Index" style="padding: 24px 6px;">My Surveys</a>
+                    </li>
+                    <li class="u-nav-item">
+                        <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white"
+                           style="padding: 24px 6px;" href="/About/Index">About Us</a>
+                    </li>
+
+                    <li class="u-nav-item">
+                        <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white"
+                           style="padding: 24px 6px;" asp-controller="Home" asp-action="Login">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="u-custom-menu u-nav-container-collapse" wfd-invisible="true">
+                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                    <div class="u-inner-container-layout u-sidenav-overflow">
+                        <div class="u-menu-close"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                            <li class="u-nav-item">
+                                <a class="u-button-style u-nav-link" href="virtual.html"
+                                   style="padding: 24px 6px;">Home</a>
+                            </li>
+                            <li class="u-nav-item">
+                                <a class="u-button-style u-nav-link" style="padding: 24px 6px;">
+                                    About
+                                    Us
+                                </a>
+                            </li>
+
+                            <li class="u-nav-item">
+                                <a class="u-button-style u-nav-link" style="padding: 24px 6px;">
+                                    Log
+                                    Out
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70" wfd-invisible="true"></div>
+            </div>
+        </nav><a href="/MainPage" class="u-image u-logo u-image-1" data-image-width="1280" data-image-height="1280">
+            <img src="~/images/gb7490de3f6eff549b24d7b35768b2e82c466b65d600f5148e88f2ac5fefc6115d1baef20a074237e4d189cc8aa979034b5ad48ee1247f0130ec651d6eeeca71c_1280.png"
+                 class="u-logo-image u-logo-image-1">
+        </a>
+        <h3 class="u-headline u-text u-text-body-alt-color u-text-default u-text-1">
+            <a href="/MainPage">TRENDY SURVEY</a>
+        </h3>
+    </header>
+    <section class="u-clearfix u-valign-middle u-white u-section-1" id="carousel_65bf">
+        <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+                <div class="u-layout-row">
+                    <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-23 u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-1">
+
+
+
+                            <div class="form-group container bg bg-warning bg-gradient shadow border1 ">
+                                <form asp-action="Index" style="margin-top: 62px; text-align:center ">
+                                    <h1 class="u-custom-font u-font-raleway u-text u-text-palette-2-base u-title u-text-1">
+                                        <span style="font-size: 2.25rem;">Please Enter the Same Survey Name Again</span>
+
+                                    </h1>
+
+                                    <br>
+
+
+                                    <input name="Name" class="form-control border border-4 border  rounded-3"
+                                           action="/CreateQuesiton/Index" type="text" placeholder="Survey Name" required />
+                                    <br>
+
+                                    <br><br>
+
+                                    <h1 class="u-custom-font u-font-raleway u-text u-text-palette-2-base u-title u-text-1 ">
+                                        <span style="font-size: 2.25rem;">Enter a Question</span>
+                                    </h1>
+                                    @if (@TempData["survey"] != null)
+                                    {
+                                        <h6 style="color: red; border: 2px solid red; padding:5px ; border-radius :3px;">
+                                            <strong>@TempData["survey"]</strong>
+                                        </h6>
+
+                                    }
+
+                                    <br>
+
+                                    <input name="soru" class="form-control border border-4 border rounded-3"
+                                           action="/CreateQuesiton/Index" type="text" placeholder="Question" required />
+
+
+                                    <br>
+
+                                    <button type="submit" id="btnShowMsg" value="Click Me!" onClick="showMessage()"
+                                            class="u-active-white u-border-2 u-border-active-grey-30 u-border-hover-grey-30 u-border-palette-2-base u-btn u-btn-round u-button-style u-custom-font u-font-raleway u-hover-white u-palette-2-base u-radius-5 u-btn-3 p-2 mx-auto"
+                                            style="width:30.7vw;">
+                                        Create
+                                        Question
+                                    </button>
+
+
+                                    <a asp-controller="question" asp-action="Index"
+                                       class="u-active-white u-border-2 u-border-active-grey-30 u-border-hover-grey-30 u-border-palette-2-base u-btn u-btn-round u-button-style u-custom-font u-font-raleway u-hover-white u-palette-2-base u-radius-5 u-btn-3 mx-auto"
+                                       style="width:30.7vw;">
+                                        Available
+                                        Surveys
+                                    </a>
+
+
+
+
+                                    <br>
+
+                                </form>
+                                <br>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="u-container-style u-image u-layout-cell u-right-cell u-size-37 u-image-1">
+                        <img style="width: 500px; height: 600px;" src="~/images/7.png" />
+                        <div class="u-container-layout u-container-layout-2"></div>
+                    </div>
+
+
+                </div>
+    </section>
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-65c1">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <br>
+            <p class="u-text u-text-body-alt-color u-text-7">Copyright © 2021</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

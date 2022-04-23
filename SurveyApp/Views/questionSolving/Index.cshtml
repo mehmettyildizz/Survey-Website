@@ -1,0 +1,170 @@
+﻿@model IEnumerable<SurveyApp.Models.Question>
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="What We Do">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>ViewQuestions</title>
+
+
+    <link rel="stylesheet" href="~/nicepage.css" media="screen">
+    <link rel="stylesheet" href="~/MainPage.css" media="screen">
+    <script class="u-script" type="text/javascript" src="~/jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="~/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.2.22, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="MainPage">
+    <meta property="og:type" content="website">
+
+    <style>
+        .border1 {
+
+            border: 3px solid #A3E4DB;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<script type="text/javascript">
+  
+    function showMessage()
+        {
+            alert("Survey is completed.");
+        }
+  
+    
+</script>
+
+<body class="u-body">
+	<header class="u-clearfix u-gradient u-header u-header" id="sec-eced">
+		<nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="LG">
+			<div class="menu-collapse"
+				style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;"
+				wfd-invisible="true">
+				<a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-color u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+					href="#" style="padding: 7px 12px; font-size: calc(1em + 14px);">
+					<svg viewBox="0 0 24 24">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+					</svg>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<defs>
+							<symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+								<rect y="1" width="16" height="2"></rect>
+								<rect y="7" width="16" height="2"></rect>
+								<rect y="13" width="16" height="2"></rect>
+							</symbol>
+						</defs>
+					</svg>
+				</a>
+			</div>
+			<div class="u-custom-menu u-nav-container" wfd-invisible="true">
+				<ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+					<li class="u-nav-item"><a
+							class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white"
+							asp-controller="MainPage" asp-action="Mainpage" style="padding: 24px 6px;">Home</a>
+					</li>
+                    <li class="u-nav-item">
+                        <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white"
+                          href="/mySurveysPage/Index" style="padding: 24px 6px;">My Surveys</a>
+                    </li>
+					<li class="u-nav-item"><a
+							class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white"
+							style="padding: 24px 6px;" href="/About/Index">About</a>
+					</li>
+					
+					<li class="u-nav-item"><a
+							class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white"
+							style="padding: 24px 6px;" asp-controller="Home" asp-action="Login">Log Out</a>
+					</li>
+				</ul>
+			</div>
+		</nav><a href="#" class="u-image u-logo u-image-1" data-image-width="1280"
+			data-image-height="1280">
+			<img src="~/images/gb7490de3f6eff549b24d7b35768b2e82c466b65d600f5148e88f2ac5fefc6115d1baef20a074237e4d189cc8aa979034b5ad48ee1247f0130ec651d6eeeca71c_1280.png"
+				class="u-logo-image u-logo-image-1">
+		</a>
+		<h3 class="u-headline u-text u-text-body-alt-color u-text-default u-text-1">
+			<a href="#">TRENDY SURVEY</a>
+		</h3>
+	</header> 
+    </header>
+    <section class="u-clearfix u-section-1" id="sec-c0db">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout" style="">
+                    <div class="u-layout-row" style="">
+                        <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1"
+                            src="">
+                            <div class="u-container-layout u-container-layout-1">
+                                <h1 class="u-custom-font u-font-raleway u-text u-text-palette-2-base u-title u-text-1">
+                                    Survey Questions</h1>
+                                <div class="u-border-6 u-border-palette-2-base u-line u-line-horizontal u-line-1">
+                                    @foreach (var item in Model)
+                                    {
+                                        <h5 class="nav-link active" >
+                                            @Html.DisplayFor(modelItem => item.question)
+                                            
+
+                                        </h5>
+
+                                        <form method="post" class="form-control" action="/kontrol/onay" style="text-align: center;" >
+                                            <fieldset style="background-color: orange; text-align:center" class="border1">
+
+                                                <input type="radio" name="favori" value="StronglyDisagree">Strongly Disagree<br>
+                                                <input type="radio" name="favori" value="Disagree" >Disagree<br>
+                                                <input type="radio" name="favori" value="Undecided">Undecided<br>
+                                                <input type="radio" name="favori" value="Agree" >Agree<br>
+                                                <input type="radio" name="favori" value="StronglyAgree">Strongly Agree<br>
+                                                <br>
+                                            </fieldset>
+                                        </form>
+
+                                    }
+                                    <br>
+                                    <button type="submit" id="btnShowMsg" value="Click Me!" onClick="showMessage()"
+                                       class="u-active-white u-border-2 u-border-active-grey-30 u-border-hover-grey-30 u-border-palette-2-base u-btn u-btn-round u-button-style u-custom-font u-font-raleway u-hover-white u-palette-2-base u-radius-5 u-btn-3">Confirm</button>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div
+                            class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1">
+                            <img src="~/images/sa.png"
+                                class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-60 u-size-xs-90 u-image-1" />
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-65c1">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <br>
+            <p class="u-text u-text-body-alt-color u-text-7">Copyright © 2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>
